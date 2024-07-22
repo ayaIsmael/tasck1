@@ -22,7 +22,7 @@ window.addEventListener('scroll', function(){
 });
 
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
+    $(".owl-carousel.one").owlCarousel({
         responsive: {
             0:{
                 items:1
@@ -35,6 +35,25 @@ $(document).ready(function(){
             }
         },
         dots: true,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+    });
+});
+
+$(document).ready(function(){
+    $(".owl-carousel.two").owlCarousel({
+        responsive: {
+            0:{
+                items:1
+            },
+            767:{
+                items:2
+            },
+            992:{
+                items:3
+            }
+        },
         loop: true,
         autoplay: true,
         autoplayTimeout: 3000,

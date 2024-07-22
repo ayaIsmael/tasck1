@@ -387,7 +387,7 @@ section.inteface{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #fff;
+    background-color: #f7bd2e;
     z-index: 10;
     opacity: 0;
     transform: translateX(-100%);
@@ -401,3 +401,195 @@ section.inteface{
     opacity: 1;
 }
 /* end numbers div */
+/* start reviews section */
+.reviews{
+    padding-block: 150px;
+    position: relative;
+    overflow-x: hidden;
+}
+.reviews::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 593px;
+    height: 352px;
+    background: url('../images/testimonials-left-dec.png');
+    z-index: -1;
+}
+.reviews::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 632px;
+    height: 352px;
+    background: url('../images/testimonials-right-dec.png');
+    z-index: -1;
+}
+.review{
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #fff;
+    margin: 24px;
+    transition: all .3s;
+}
+.review:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
+}
+.review-text{
+    line-height: 25px;
+    color: #BF9223;
+    font-style: italic;
+}
+.name{
+    font-size: 20px;
+    font-weight: 900;
+}
+.name span{
+    font-size: 13px;
+    font-weight: 700;
+    color: #c7a54f;
+}
+.quote{
+    max-width: 44px;
+}
+/* end reviews section */
+/* start contact section */
+.contact{
+    background-image: url(../images/footer-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-info{
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+}
+.contact-icon{
+    float: left;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(-145deg, #BF9223 0%, rgba(246, 191, 159, 1) 100%);
+    color: #fff;
+}
+.contact-info span{
+    font-size: 15px;
+    color: #BF9223;
+    font-weight: 700;
+}
+form{  
+    padding: 40px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    background: #fff;
+}
+.form-title p:nth-of-type(1){
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+.form-title h4{
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: #111;
+}
+.form-title h4 span{
+    color: #edc257;
+}
+.form-title p:nth-of-type(2){
+    font-size: 14px;
+    line-height: 25px;
+    color: #BF9223;
+}
+.form-control{
+    width: 100%;
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #7a7a7a!important;
+    background-color: #f4f7fb!important;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    padding: 0px 15px;
+    margin-bottom: 30px;
+}
+textarea.form-control{
+    min-height: 140px;
+    max-height: 180px;
+}
+.form-control:focus{
+    background-color: transparent;
+    box-shadow: none;
+}
+form .btn{
+    display: block;
+    width: fit-content;
+    font-size: 13px;
+    color: #fff!important;
+    background: linear-gradient(-145deg, rgb(239, 196, 21) 0%, rgb(235, 176, 13) 100%);
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all .3s;
+    border: none;
+    outline: none;
+}
+footer .social-icons{
+    list-style: none;
+}
+footer .social-icons li{
+    display: inline-block;
+    margin-inline: 5px;
+}
+footer .social-icons li a{
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 50%;
+    transition: all .5s;
+}
+footer .social-icons li a:hover{
+    background-color: #deb242;
+    color: #fff;
+}
+.footer-text p{
+    font-size: 14px;
+    margin-bottom: 4px!important;
+}
+.footer-text p a{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+@media(min-width:991px){
+    form{  
+        margin-top: 40px;
+        margin-left: -100px;
+    }
+    form .btn{
+        margin-left: auto;
+    }
+    .contact-info{
+        margin-top: -30px;
+    }
+}
+/* end contact section */
